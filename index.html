@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global City Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="bg-container">
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city (e.g. Dubai, Tokyo, Paris)" spellcheck="false">
+      <button id="searchBtn">Search</button>
+    </div>
+    
+    <div id="weather" class="weather-info">
+      <h2 id="cityName">Weather</h2>
+      <img id="icon" src="" alt="">
+      <h1 id="temp">--°C</h1>
+      <p id="desc">--</p>
+      <div class="details">
+        <p id="humidity">Humidity: --%</p>
+        <p id="wind">Wind: -- m/s</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="gripper-controls">
+      <h3>Gripper Controls</h3>
+      <button id="open-gripper-btn">Open Gripper</button>
+      <button id="close-gripper-btn">Close Gripper</button>
+    </div>
+
+    <div class="forecast-section">
+      <h3>5-Day Forecast</h3>
+      <div id="forecast-list" class="forecast-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
